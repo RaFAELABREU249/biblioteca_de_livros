@@ -107,8 +107,8 @@ async function renderPage(num){
 
     scale:
     window.innerWidth < 700
-    ? 1
-    : 1.5
+    ? 2
+    : 2.2
   });
 
   canvas.height =
@@ -154,8 +154,8 @@ async function renderAllPages(){
 
       scale:
       window.innerWidth < 700
-      ? 1
-      : 1.4
+      ? 1.7
+      : 1.9
     });
 
     const newCanvas =
