@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Biblioteca</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="books.js"></script>
+
+  <script
+    type="module"
+    src="script.js"
+  ></script>
+
+</head>
+<body>
+
+  <header>
+
+    <h1>
+      📚 Minha Biblioteca
+    </h1>
+
+  </header>
+
+  <div
+    class="library"
+    id="library"
+  ></div>
+
+  <div
+    class="reader"
+    id="reader"
+  >
+
+    <button
+      class="back-btn"
+      id="backBtn"
+    >
+      ⬅ Voltar
+    </button>
+
+    <div class="mode-buttons">
+
+      <button id="buttonMode">
+        Modo Página
+      </button>
+
+      <button id="scrollMode">
+        Modo Scroll
+      </button>
+
+    </div>
+
+    <canvas id="pdfCanvas"></canvas>
+
+    <div class="controls">
+
+      <button id="prevPage">
+        ⬅ Página Anterior
+      </button>
+
+      <div class="page-info">
+
+        Página
+
+        <span id="pageNum">
+          1
+        </span>
+
+        /
+
+        <span id="pageCount">
+          1
+        </span>
+
+      </div>
+
+      <button id="nextPage">
+        Próxima Página ➡
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

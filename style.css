@@ -1,0 +1,212 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#111;
+  color:white;
+  min-height:100vh;
+}
+
+header{
+  padding:20px;
+  background:#1b1b1b;
+  border-bottom:1px solid #333;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+h1{
+  font-size:28px;
+}
+
+.upload-area{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+input{
+  background:#222;
+  color:white;
+  border:1px solid #444;
+  padding:8px;
+  border-radius:8px;
+}
+
+button{
+  cursor:pointer;
+  border:none;
+  border-radius:10px;
+
+  background:#ffcc00;
+  color:black;
+
+  font-weight:bold;
+  padding:10px 16px;
+
+  transition:0.2s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+.library{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fill,minmax(180px,1fr));
+
+  gap:20px;
+  padding:25px;
+}
+
+.book{
+  background:#1d1d1d;
+  border-radius:18px;
+  overflow:hidden;
+
+  transition:0.2s;
+  cursor:pointer;
+
+  border:1px solid #333;
+}
+
+.book:hover{
+  transform:translateY(-5px);
+}
+
+.book img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.book-title{
+  padding:12px;
+  text-align:center;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.reader{
+  display:none;
+
+  flex-direction:column;
+  align-items:center;
+
+  padding:20px;
+}
+
+canvas{
+  background:white;
+  max-width:100%;
+
+  border-radius:12px;
+
+  box-shadow:
+  0 0 20px rgba(0,0,0,0.5);
+}
+
+.controls{
+  margin-top:20px;
+
+  display:flex;
+  gap:15px;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.page-info{
+  font-size:18px;
+}
+
+.back-btn{
+  margin-bottom:20px;
+
+  background:#444;
+  color:white;
+}
+
+.extra-page{
+  margin-bottom:20px;
+
+  max-width:100%;
+
+  border-radius:12px;
+
+  background:white;
+
+  box-shadow:
+  0 0 20px rgba(0,0,0,0.5);
+}
+
+@media(max-width:700px){
+
+  header{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .upload-area{
+    flex-direction:column;
+  }
+
+  input,
+  button{
+    width:100%;
+  }
+
+  .controls{
+    flex-direction:column;
+  }
+
+  .book img{
+    height:220px;
+  }
+
+  canvas{
+    width:100%;
+    height:auto;
+  }
+
+  .extra-page{
+    width:100%;
+    height:auto;
+  }
+}
+
+#pdfViewer{
+  width:100%;
+  height:90vh;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:white;
+}
+
+@media(max-width:700px){
+
+  #pdfViewer{
+    height:85vh;
+  }
+}
+
+.mode-buttons{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
