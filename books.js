@@ -27,7 +27,7 @@ const books = [
   {
     title: "O Poeta e Eu",
     pdf: "pdfs/O Poeta e Eu.pdf",
-    cover: "covers/o poeta e eu.jpg"
+    cover: "covers/O poeta e eu.jpg"
   },
 
   {
